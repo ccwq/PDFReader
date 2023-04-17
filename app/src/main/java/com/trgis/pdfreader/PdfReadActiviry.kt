@@ -1,6 +1,5 @@
 package com.trgis.pdfreader
 
-import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
@@ -12,12 +11,10 @@ import android.os.StrictMode.VmPolicy
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
 import java.io.File
 
 
-class MainAct : AppCompatActivity() {
+class PdfReadActiviry : AppCompatActivity() {
 
     private val REQUEST_CODE = 1 // 请求授权的请求码
 
@@ -29,7 +26,7 @@ class MainAct : AppCompatActivity() {
         }
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.act_main)
+        setContentView(R.layout.activity_pdf_read)
 
         val openButton = findViewById(R.id.openButton) as Button
 
